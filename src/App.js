@@ -10,7 +10,7 @@ class App extends Component {
 
   renderer = ({ total, days, hours, minutes, seconds, milliseconds, completed }) => {
     return (
-      <span>{`${days} days ${hours} hours ${minutes} minutes ${seconds} seconds to go`}</span>
+      <span>{`${days}D ${hours}h ${minutes}m ${seconds}s to go`}</span>
     );
   }
 
