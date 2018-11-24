@@ -115,3 +115,17 @@ body {
 .mastfoot {
   color: rgba(255, 255, 255, .5);
 }
+
+
+.white-opacity-row {
+  height: rem;
+  background-color: white;
+  background: rgba(204, 204, 204, 0.6);
+}
+
+.grewal-farm-image {
+  height: inherit;
+  width: inherit;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

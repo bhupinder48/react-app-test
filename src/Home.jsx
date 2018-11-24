@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
-import '../node_modules/bootstrap/dist/css/bootstrap.css'
-import './css/cover.css'
-import './css/App.css';
 import CoverHeader from './CoverHeader';
 import CountDown from 'react-countdown-now';
 import { Row, Col } from 'reactstrap';
 
-class App extends Component {
+class Home extends Component {
 
   renderer = ({ total, days, hours, minutes, seconds, milliseconds, completed }) => {
     return (
@@ -17,9 +14,9 @@ class App extends Component {
   render() {
     return (
       <div className="cover-container d-flex h-100 p-3 mx-auto flex-column">
-        <CoverHeader />
+        <CoverHeader activeTab={this.props.activeTab} />
 
-        <main role="main" className="inner cover font-weight-bold">
+        <main role="main" className="mt-auto inner cover font-weight-bold">
           <Row>
             <Col>
               <h1 className="cover-heading">We are getting married on</h1>
@@ -40,4 +37,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Home;
